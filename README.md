@@ -19,14 +19,17 @@ Via Composer
 $ composer require getpop/translation
 ```
 
-<!--
 ## Usage
 
-``` php
-$skeleton = new PoP\Translation();
-echo $skeleton->echoPhrase('Hello, League!');
+```php
+use PoP\Translation\Facades\TranslationAPI;
+
+// Get an instance of the service
+$translationapi = TranslationAPI::getInstance();
+
+// Translate text
+$translationapi->__($text, $domain);
 ```
--->
 
 ## Change log
 
