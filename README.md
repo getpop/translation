@@ -9,7 +9,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 -->
 
-Translation API for PoP components
+Contracts to implement translation for PoP components
 
 ## Install
 
