@@ -28,7 +28,7 @@ use PoP\Translation\Facades\TranslationAPI;
 $translationapi = TranslationAPI::getInstance();
 
 // Translate text
-$translationapi->__($text, $domain);
+$translatedText = $translationapi->__($text, $domain);
 ```
 
 ## Change log
