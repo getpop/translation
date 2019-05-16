@@ -12,7 +12,7 @@ class TranslationAPITestCase extends \PHPUnit\Framework\TestCase
         parent::__construct();
         $containerBuilder = ContainerBuilderFactory::getInstance();
         $containerBuilder
-            ->register('\PoP\Translation\Contracts\TranslationAPI', TranslationAPI::class);
+            ->register('translation_api', TranslationAPI::class);
     }
     /**
      * Test that applyFilter returns $value

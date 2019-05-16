@@ -8,6 +8,6 @@ class TranslationAPI
 {
     public static function getInstance(): TranslationAPIInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('\PoP\Translation\Contracts\TranslationAPI');
+        return ContainerBuilderFactory::getInstance()->get('translation_api');
     }
 }
