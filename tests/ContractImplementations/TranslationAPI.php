@@ -4,4 +4,8 @@ namespace PoP\Translation\ContractImplementations;
 
 class TranslationAPI implements \PoP\Translation\Contracts\TranslationAPIInterface
 {
+    public function __($text, $domain = 'default')
+    {
+        return $text;
+    }
 }
