@@ -4,6 +4,7 @@ namespace PoP\Translation;
 
 use PoP\Root\Container\ContainerBuilderFactory;
 use PoP\Translation\ContractImplementations\TranslationAPI;
+use PoP\Translation\Facades\TranslationAPIFacade;
 
 class TranslationAPITestCase extends \PHPUnit\Framework\TestCase
 {
@@ -19,6 +20,6 @@ class TranslationAPITestCase extends \PHPUnit\Framework\TestCase
      */
     public function testTranslate(): void
     {
-        $translationapi = \PoP\Translation\Facades\TranslationAPI::getInstance();
+        $translationapi = TranslationAPIFacade::getInstance();
     }
 }

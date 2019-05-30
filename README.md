@@ -22,7 +22,7 @@ $ composer require getpop/translation
 ## Usage
 
 ```php
-use PoP\Translation\Facades\TranslationAPI;
+use PoP\Translation\Facades\TranslationAPIFacade;
 
 // Get an instance of the service
 $translationapi = TranslationAPI::getInstance();
