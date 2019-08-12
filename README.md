@@ -19,8 +19,6 @@ Via Composer
 $ composer require getpop/translation
 ```
 
-([PoP](https://github.com/leoloso/PoP) must be installed)
-
 ## Usage
 
 ```php
