@@ -1,5 +1,5 @@
 <?php
-namespace PoP\Translation\Contracts;
+namespace PoP\Translation;
 
 interface TranslationAPIInterface
 {
