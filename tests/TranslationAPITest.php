@@ -1,12 +1,13 @@
 <?php
 declare(strict_types=1);
+
 namespace PoP\Translation;
 
 use PoP\Root\Container\ContainerBuilderFactory;
 use PoP\Translation\ContractImplementations\TranslationAPI;
 use PoP\Translation\Facades\TranslationAPIFacade;
 
-class TranslationAPITestCase extends \PHPUnit\Framework\TestCase
+class TranslationAPITest extends \PHPUnit\Framework\TestCase
 {
     public function __construct()
     {
