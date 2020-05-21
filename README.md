@@ -22,6 +22,14 @@ composer require getpop/translation
 
 ## Usage
 
+Initialize the component:
+
+``` php
+\PoP\Translation\Component::initialize();
+```
+
+Use it:
+
 ```php
 use PoP\Translation\Facades\TranslationAPIFacade;
 
