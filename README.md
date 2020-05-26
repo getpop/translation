@@ -25,7 +25,9 @@ composer require getpop/translation
 Initialize the component:
 
 ``` php
-\PoP\Translation\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\Translation\Component::class,
+]);
 ```
 
 Use it:
