@@ -3,9 +3,10 @@ declare(strict_types=1);
 
 namespace PoP\Translation;
 
+use PoP\Translation\TranslationAPIInterface;
 use PoP\Root\Container\ContainerBuilderFactory;
-use PoP\Translation\ContractImplementations\TranslationAPI;
 use PoP\Translation\Facades\TranslationAPIFacade;
+use PoP\Translation\ContractImplementations\TranslationAPI;
 
 class TranslationAPITest extends \PHPUnit\Framework\TestCase
 {
@@ -14,7 +15,7 @@ class TranslationAPITest extends \PHPUnit\Framework\TestCase
         parent::__construct();
         $containerBuilder = ContainerBuilderFactory::getInstance();
         $containerBuilder
-            ->register('translation_api', TranslationAPI::class);
+            ->register(TranslationAPIInterface::class, TranslationAPI::class);
     }
     /**
      * Test that applyFilter returns $value
