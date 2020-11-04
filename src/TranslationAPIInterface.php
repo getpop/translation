@@ -6,5 +6,5 @@ namespace PoP\Translation;
 
 interface TranslationAPIInterface
 {
-    public function __($text, $domain = 'default'): string;
+    public function __(string $text, string $domain = 'default'): string;
 }
