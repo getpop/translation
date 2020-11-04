@@ -13,6 +13,7 @@ class TranslationAPITest extends \PHPUnit\Framework\TestCase
     public function __construct()
     {
         parent::__construct();
+        /** @var ContainerBuilder */
         $containerBuilder = ContainerBuilderFactory::getInstance();
         $containerBuilder
             ->register(TranslationAPIInterface::class, TranslationAPI::class);
